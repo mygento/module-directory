@@ -50,7 +50,7 @@ class AddDataForRussia implements DataPatchInterface
         $dataInstaller = $this->dataInstallerFactory->create();
         $dataInstaller->addCountryRegions(
             $this->moduleDataSetup->getConnection(),
-            $this->getDataForPoland()
+            $this->getDataForRussia()
         );
     }
 
@@ -73,11 +73,11 @@ class AddDataForRussia implements DataPatchInterface
     }
 
     /**
-     * Poland states data.
+     * Russian regions data.
      *
      * @return array
      */
-    private function getDataForPoland()
+    private function getDataForRussia()
     {
         return [
             ['RU', '77', 'Москва'],
